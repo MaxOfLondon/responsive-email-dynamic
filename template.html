@@ -1,0 +1,192 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional //EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> 
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja" lang="ja">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<title>Some title using [field 1] and [field 2]</title>
+	<style type="text/css">
+		/* Based on The MailChimp Reset INLINE: Yes. */  
+		/* Client-specific Styles */
+		#outlook a {padding:0;} /* Force Outlook to provide a "view in browser" menu link. */
+		body{width:100% !important; -webkit-text-size-adjust:100%; -ms-text-size-adjust:100%; margin:0; padding:0;} 
+		/* Prevent Webkit and Windows Mobile platforms from changing default font sizes.*/ 
+		.ExternalClass {width:100%;} /* Force Hotmail to display emails at full width */  
+		.ExternalClass, .ExternalClass p, .ExternalClass span, .ExternalClass font, .ExternalClass td, .ExternalClass div {line-height: 100%;}
+		/* Forces Hotmail to display normal line spacing.  More on that: http://www.emailonacid.com/forum/viewthread/43/ */ 
+		#backgroundTable {margin:0; padding:0; width:100% !important; line-height: 100% !important;}
+		/* End reset */
+		/* Some sensible defaults for images
+		Bring inline: Yes. */
+		img {outline:none; text-decoration:none; -ms-interpolation-mode: bicubic;} 
+		a img {border:none;} 
+		.image_fix {display:block;}
+		/* Yahoo paragraph fix
+		Bring inline: Yes. */
+		p {margin: 1em 0;}
+		/* Hotmail header color reset
+		Bring inline: Yes. */
+		h1, h2, h3, h4, h5, h6 {color: black !important;}
+		h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {color: blue !important;}
+		h1 a:active, h2 a:active,  h3 a:active, h4 a:active, h5 a:active, h6 a:active {
+		color: red !important; /* Preferably not the same color as the normal header link color.  There is limited support for psuedo classes in email clients, this was added just for good measure. */
+		}
+		h1 a:visited, h2 a:visited,  h3 a:visited, h4 a:visited, h5 a:visited, h6 a:visited {
+		color: purple !important; /* Preferably not the same color as the normal header link color. There is limited support for psuedo classes in email clients, this was added just for good measure. */
+		}
+		/* Outlook 07, 10 Padding issue fix
+		Bring inline: No.*/
+		table td {border-collapse: collapse;}
+		/* Outlook 2007+ * font size fix */
+		main *{font-size: 12pt;}
+		/* Remove spacing around Outlook 07, 10 tables
+		Bring inline: Yes */
+		table { border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt; }
+		/* Styling your links has become much simpler with the new Yahoo.  In fact, it falls in line with the main credo of styling in email and make sure to bring your styles inline.  Your link colors will be uniform across clients when brought inline.
+		Bring inline: Yes. */
+		a {color: orange;}
+		/*
+		MOBILE TARGETING
+		*/
+		@media only screen and (max-device-width: 480px) {
+			/* Part one of controlling phone number linking for mobile. */
+			a[href^="tel"], a[href^="sms"] {
+						text-decoration: none;
+						color: blue;
+						pointer-events: none;
+						cursor: default;
+					}
+			.mobile_link a[href^="tel"], .mobile_link a[href^="sms"] {
+						text-decoration: default;
+						color: orange !important;
+						pointer-events: auto;
+						cursor: default;
+					}
+		}
+		/* More Specific Targeting */
+		@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+		/* ipad (tablets, smaller screens, etc) */
+			a[href^="tel"], a[href^="sms"] {
+						text-decoration: none;
+						color: blue;
+						pointer-events: none;
+						cursor: default;
+					}
+			.mobile_link a[href^="tel"], .mobile_link a[href^="sms"] {
+						text-decoration: default;
+						color: orange !important;
+						pointer-events: auto;
+						cursor: default;
+					}
+		}
+		@media only screen and (-webkit-min-device-pixel-ratio: 2) {
+		/* iPhone 4g styles */ 
+		}
+		/* Android targeting */
+		@media only screen and (-webkit-device-pixel-ratio:.75){
+		/* CSS for low density (ldpi) Android layouts */
+		}
+		@media only screen and (-webkit-device-pixel-ratio:1){
+		/* CSS for medium density (mdpi) Android layouts */
+		}
+		@media only screen and (-webkit-device-pixel-ratio:1.5){
+		/* CSS for high density (hdpi) Android layouts */
+		}
+		/* end Android targeting */
+		
+		/* CUSTOM STYLING */
+		body { font-family: Arial, Helvetica, sans-serif; }
+		.xxx { font-size: 0px; line-height: 0px; text-decoration: none; color: white; visibility: hidden; display: none; }
+		td.label { font-weight: bold; width: 200px; text-align: right; padding-left: 2pt; }
+		td.value { min-width: 80%; padding-left: 2pt; padding-right: 2pt; }
+		/* end CUSTOM STYLING */
+	</style>
+
+	<!-- Targeting Windows Mobile -->
+	<!--[if IEMobile 7]>
+	<style type="text/css">
+	</style>
+	<![endif]-->   
+
+	<!--
+	END MOBILE TARGETING
+	-->
+
+	<!--[if gte mso 9]>
+		<style>
+		/* Target Outlook 2007 and 2010 */
+		</style>
+	<![endif]-->
+</head>
+<body>
+	<!-- Wrapper/Container Table: Wrapper table to control the width and the background color consistently instead of setting attributes on the body tag. -->
+	<table cellpadding="0" cellspacing="0" border="0" height="100%" width="100%" id="backgroundTable">
+		<tr>
+			<td valign="top">
+				<p>Dear Customer, </p>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+				<table cellpadding="0" cellspacing="0" border="0" width="100%" align="center">
+					<tr class="xxx[field 1]">
+						<td valign="top" class="label">Field 1:</td>
+						<td valign="top" class="value">[field 1]</td>
+					</tr>
+					<tr class="xxx[field 2]">
+						<td valign="top" class="label">Field 2:</td>
+						<td valign="top" class="value">[field 2]</td>
+					</tr>
+					<tr class="xxx[field 3]">
+						<td valign="top" class="label">Field 3:</td>
+						<td valign="top" class="value">[field 3]</td>
+					</tr>
+					<tr class="xxx[field 4]">
+						<td valign="top" class="label">Field 4:</td>
+						<td valign="top" class="value">[field 4]</td>
+					</tr>
+					<tr class="xxx[field 5]">
+						<td valign="top" class="label">Field 5:</td>
+						<td valign="top" class="value">[field 5]</td>
+					</tr>
+					<tr class="xxx[field 6]">
+						<td valign="top" class="label">Field 6:</td>
+						<td valign="top" class="value">[field 6]</td>
+					</tr>
+					<tr class="xxx[field 7]">
+						<td valign="top" class="label">Field 7:</td>
+						<td valign="top" class="value">[field 7]</td>
+					</tr>
+					<tr class="xxx[field 8]">
+						<td valign="top" class="label">Field 8:</td>
+						<td valign="top" class="value">[field 8]</td>
+					</tr>
+					<tr class="xxx[field 9]">
+						<td valign="top" class="label">Field 9:</td>
+						<td valign="top" class="value">[field 9]</td>
+					</tr>
+					<tr class="xxx[field 10]">
+						<td valign="top" class="label">Field 10:</td>
+						<td valign="top" class="value">[field 10]</td>
+					</tr>
+					<tr class="xxx[field 11]">
+						<td valign="top" class="label">Field 11:</td>
+						<td valign="top" class="value">[field 11]</td>
+					</tr>
+				</table>
+				<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
+				<p style="font-size:120%; color:#00a59b;">The Company</p>
+				<!-- Working with telephone numbers (including sms prompts).  Use the "mobile" class to style appropriately in desktop clients
+				versus mobile clients. -->
+				<!-- <span class="mobile_link">123-456-7890</span> -->
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<img class="image_fix" src="http://via.placeholder.com/350x65" alt="logo" title="Logo" width="350" height="65" />
+			</td>
+		</tr>
+		<!-- always hidden -->
+		<tr class="xxx">
+			<td valign="top">[field 12]</td>
+		</tr>
+	</table>
+<!-- End of wrapper table -->
+</body>
+</html>

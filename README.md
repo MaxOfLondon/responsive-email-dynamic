@@ -5,10 +5,12 @@ Sometimes an organisation needs to send templated email for which data is pulled
 
 This responsive html email template uses ccs trick at the client side to hide rows from the table if value is null. The challenge was that not all email clients support css3 and most do not allow javascript in the content so selective hiding based on value was not possible. The trick I came up with was to hide content of the table row using unpredictably constructed class names during parsing.
 
-In the template the class name is prepended with xxx followed substitution token that parser will replace with some value. 
-If the field value is null then the resulting class name will be 'xxx' which has corresponding style to hide it. If field value is not null the resulting name will be 'xxxSomeValue' that style does not exist hence default style will be inherited from the document and used.
+In the template the class name is prepended with xxx followed by a substitution token that parser will replace with some value thus constructing new class name dynamically. 
+If the field value was null then the resulting class name would be 'xxx' which has corresponding style in the template to hide it. If field value wasn't null the resulting name would be 'xxxSomeValue' that style does not exist hence default style would be inherited from the document.
 
 As an example I used this trick with Siebel that substitutes fileds that are surrounded by square brackets and that worked rather well. 
+
+![ScreenShot](capture.jpg)
 
 ## An example
 
